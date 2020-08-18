@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coronapedia</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-primary navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="#">Coronapedia</a>
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Beranda</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#statistik">Statistik</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#cegah">Pencegahan</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#hotline">Hotline</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+          <beranda-konten></beranda-konten>
+          <div id="statistik"></div> 
+        </div>
+        <article class="artikel-utama">
+          <div id="tabel-utama" class="container"></div>
+          <div class="container">
+            <search-bar></search-bar>
+          </div>
+          <div id="tabel-lokal" class="container"></div>
+          <div id="cegah"></div>
+        </article>
+        <article id="pencegahan">
+          <div class="container">
+            <br>
+            <tips-pencegahan></tips-pencegahan>
+            <div id="hotline"></div>
+          </div>
+        </article>
+        <article id="tabel">
+          <div class="container table-responsive">
+            <h1><span class="fitur-garisbawah">Hotline</span></h1>
+            <table class="table table-bordered">
+              <thead class="thead-light">
+                <tr>
+                  <th>Nama</th>
+                  <th>Kontak</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Kemenkes RI</td>
+                  <td>021-5210411 <br> 081212123119</td>
+                </tr>
+                <tr>
+                  <td>Banten</td>
+                  <td>( 021 ) 1500 293 <br> ( 021 ) 5210 411 <br> 0812 1212 3119 <br> 0822 9997 3322</td>
+                </tr>
+                <tr>
+                  <td>DKI Jakarta</td>
+                  <td>112 <br> 081388376955 </td>
+                </tr>
+                <tr>
+                  <td>Jawa Barat</td>
+                  <td>119 <br> 0821 1821 9287 </td>
+                </tr>
+                <tr>
+                  <td>Jawa Tengah</td>
+                  <td>(024) 3580713 <br> 082313600560 <br> 1500649</td>
+                </tr>
+                <tr>
+                  <td>DI Yogyakarta</td>
+                  <td>0274555585 <br> 08112764800</td>
+                </tr>
+                <tr>
+                  <td>Jawa Timur</td>
+                  <td>1500 117</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+    </main>
+    <footer>
+      <p>copyright &#169; 2020 - Coronapedia. <br> All rights reserved.</p>
+    </footer>
+</body>
+</html>
